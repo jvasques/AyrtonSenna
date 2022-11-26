@@ -46,7 +46,7 @@ Projeto pessoal homenageando o piloto de Fórmula 1 brasileiro, Ayrton Senna.
 </br>
 
 ## Visite o Projeto
-[![linkedin](img/eye.png)](https://www.linkedin.com/in/jpvasques/)
+[![linkedin](img/eye.png)](https://vasquesjp.github.io/AyrtonSenna/)
 </br>
 </br>
 </br>
