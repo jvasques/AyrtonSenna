@@ -6,7 +6,11 @@ setTimeout(hideLoader, 2 * 1000);
 function homeBtn() {
     document.getElementById("homeContent").style.display = "block";
     document.getElementById("curiosityContent").style.display = "none";
+<<<<<<< HEAD
     document.getElementById("galleryContent").style.display = "none";
+=======
+    document.getElementById("galeryContent").style.display = "none";
+>>>>>>> 9417a8e1345d9133d6009f8bef4d4adebc3088e4
     document.getElementById("quizContent").style.display = "none";
     document.getElementById("awardsContent").style.display = "none";
 }
@@ -14,13 +18,22 @@ function homeBtn() {
 function curiosityBtn() {
     document.getElementById("curiosityContent").style.display = "block";
     document.getElementById("homeContent").style.display = "none";
+<<<<<<< HEAD
     document.getElementById("galleryContent").style.display = "none";
+=======
+    document.getElementById("galeryContent").style.display = "none";
+>>>>>>> 9417a8e1345d9133d6009f8bef4d4adebc3088e4
     document.getElementById("quizContent").style.display = "none";
     document.getElementById("awardsContent").style.display = "none";
 }
 
+<<<<<<< HEAD
 function galleryBtn() {
     document.getElementById("galleryContent").style.display = "block";
+=======
+function galeryBtn() {
+    document.getElementById("galeryContent").style.display = "block";
+>>>>>>> 9417a8e1345d9133d6009f8bef4d4adebc3088e4
     document.getElementById("curiosityContent").style.display = "none";
     document.getElementById("homeContent").style.display = "none";
     document.getElementById("quizContent").style.display = "none";
@@ -31,7 +44,11 @@ function quizBtn() {
     document.getElementById("quizContent").style.display = "block";
     document.getElementById("curiosityContent").style.display = "none";
     document.getElementById("homeContent").style.display = "none";
+<<<<<<< HEAD
     document.getElementById("galleryContent").style.display = "none";
+=======
+    document.getElementById("galeryContent").style.display = "none";
+>>>>>>> 9417a8e1345d9133d6009f8bef4d4adebc3088e4
     document.getElementById("awardsContent").style.display = "none";
 }
 
@@ -39,6 +56,7 @@ function awardsBtn() {
     document.getElementById("awardsContent").style.display = "block";
     document.getElementById("curiosityContent").style.display = "none";
     document.getElementById("homeContent").style.display = "none";
+<<<<<<< HEAD
     document.getElementById("galleryContent").style.display = "none";
     document.getElementById("quizContent").style.display = "none";
 }
@@ -76,3 +94,8 @@ controls.forEach(control => {
         items[currentItem].classList.add("currentItem");
     });
 });
+=======
+    document.getElementById("galeryContent").style.display = "none";
+    document.getElementById("quizContent").style.display = "none";
+}
+>>>>>>> 9417a8e1345d9133d6009f8bef4d4adebc3088e4
