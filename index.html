@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <link rel="shortcut icon" href="./img/capacete.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <title>Ayrton Senna: O Maior Ídolo Brasileiro</title>
+</head>
+<body>
+    <header>
+        <img src="./img/cap_svg.svg" alt="logo" width="64px"> <p>Ayrton Senna</p>
+        <nav class="menu">
+            <ul class="list">
+               <li class="listItem"><a class="listItemLink" id="home" href="#" onclick="homeBtn();">Início</a></li>
+               <li class="listItem"><a class="listItemLink" id="curiosity" href="#" onclick="curiosityBtn();">Curiosidades</a></li>
+               <li class="listItem"><a class="listItemLink" id="gallery" href="#" onclick="galleryBtn();">Galeria</a></li>
+               <li class="listItem"><a class="listItemLink" id="quiz" href="#" onclick="quizBtn();">Quiz</a></li>
+               <li class="listItem"><a class="listItemLink" id="awards" href="#" onclick="awardsBtn();">Títulos</a></li>
+            </ul>
+        </nav>
+
+        <nav class="menuHamburguer">
+            <input type="checkbox" class="menuFaketrigger" />
+            <div class="menuLines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+               <li><a id="home" href="#" onclick="homeBtn();">Início</a></li>
+               <li><a id="curiosity" href="#" onclick="curiosityBtn();">Curiosidades</a></li>
+               <li><a id="gallery" href="#" onclick="galleryBtn();">Galeria</a></li>
+               <li><a id="quiz" href="#" onclick="quizBtn();">Quiz</a></li>
+               <li><a id="awards" href="#" onclick="awardsBtn();">Títulos</a></li>
+            </ul>
+            </nav>
+
+    </header>
+
+    <div class="container" id="homeContent" style="display:block;">
+        <h1>Ayrton Senna: O Maior Ídolo Brasileiro</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mi nec odio semper vulputate. Nam et rutrum arcu. Aenean lacus velit, pretium non tortor sed, sagittis congue sem. Nam tempor erat at tellus luctus faucibus. Donec at est in erat congue tincidunt non at odio. Ut non lorem arcu. Duis fermentum congue justo, vel dignissim nisi aliquam eget. Curabitur fringilla condimentum massa, eu accumsan neque venenatis nec. Praesent iaculis sagittis eros id luctus.</p>
+        <p>Sed  in nunc mattis, vehicula justo ac, lacinia ex. In hac habitasse platea dictumst. Donec ac tincidunt eros. Aliquam erat volutpat. Morbi varius est sit amet est tempor, sit amet vehicula nunc pellentesque. Integer consequat tincidunt mauris, vel hendrerit justo convallis non. Proin sit amet sem eget diam viverra tempus quis ultrices mauris. Phasellus nulla metus, ultrices posuere risus eu, vehicula porttitor mi. Vivamus eu lacus ac nibh vulputate maximus. Morbi lobortis mattis leo, id facilisis purus tempus eget. Fusce a suscipit orci, eu sollicitudin ipsum.</p>
+    </div>
+
+    <div class="container" id="curiosityContent" style="display:none;">
+        <h1>Curiosidades</h1>
+        <h3>Curiosidades sobre Ayrton Senna</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mi nec odio semper vulputate. Nam et rutrum arcu. Aenean lacus velit, pretium non tortor sed, sagittis congue sem. Nam tempor erat at tellus luctus faucibus. Donec at est in erat congue tincidunt non at odio. Ut non lorem arcu. Duis fermentum congue justo, vel dignissim nisi aliquam eget. Curabitur fringilla condimentum massa, eu accumsan neque venenatis nec. Praesent iaculis sagittis eros id luctus.</p>
+        <p>Sed  in nunc mattis, vehicula justo ac, lacinia ex. In hac habitasse platea dictumst. Donec ac tincidunt eros. Aliquam erat volutpat. Morbi varius est sit amet est tempor, sit amet vehicula nunc pellentesque. Integer consequat tincidunt mauris, vel hendrerit justo convallis non. Proin sit amet sem eget diam viverra tempus quis ultrices mauris. Phasellus nulla metus, ultrices posuere risus eu, vehicula porttitor mi. Vivamus eu lacus ac nibh vulputate maximus. Morbi lobortis mattis leo, id facilisis purus tempus eget. Fusce a suscipit orci, eu sollicitudin ipsum.</p>
+    </div>
+
+    <div class="container galleryContainer" id="galleryContent" style="display:none;">
+        <h1>Galeria</h1>
+        <h3>Imagens Históricas de Ayrton Senna</h3>
+        <button class="arrowLeft control" aria-label="Previous image">◀</button>
+        <button class="arrowRight control" aria-label="Next image">▶</button>
+        <div class="galleryWrapper">
+            <div class="gallery">
+                <a href="./img/92.webp" data-lightbox="image-1"><img src="./img/92.webp" alt="Ayrton Senna"  class="item currentItem" ></a>
+                <a href="./img/93.webp" data-lightbox="image-1"><img src="./img/93.webp" alt="Ayrton Senna"  class="item currentItem" ></a>
+                <a href="./img/94.webp" data-lightbox="image-1"><img src="./img/94.webp" alt="Ayrton Senna"  class="item currentItem" ></a>
+                <a href="./img/95.webp" data-lightbox="image-1"><img src="./img/95.webp" alt="Ayrton Senna"  class="item currentItem" ></a>
+                <a href="./img/96.webp" data-lightbox="image-1"><img src="./img/96.webp" alt="Ayrton Senna"  class="item currentItem" ></a>
+                <a href="./img/97.webp" data-lightbox="image-1"><img src="./img/97.webp" alt="Ayrton Senna"  class="item currentItem" ></a>
+                <a href="./img/98.webp" data-lightbox="image-1"><img src="./img/98.webp" alt="Ayrton Senna"  class="item currentItem" ></a>
+                <a href="./img/99.webp" data-lightbox="image-1"><img src="./img/99.webp" alt="Ayrton Senna"  class="item currentItem" ></a>
+                <a href="./img/91.jpg" data-lightbox="image-1"><img src="./img/91.jpg" alt="Ayrton Senna"  class="item currentItem" ></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="quizContent" style="display:none;">
+        <h1>Teste seus conhecimentos a respeito de Ayrton Senna</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mi nec odio semper vulputate. Nam et rutrum arcu. Aenean lacus velit, pretium non tortor sed, sagittis congue sem. Nam tempor erat at tellus luctus faucibus. Donec at est in erat congue tincidunt non at odio. Ut non lorem arcu. Duis fermentum congue justo, vel dignissim nisi aliquam eget. Curabitur fringilla condimentum massa, eu accumsan neque venenatis nec. Praesent iaculis sagittis eros id luctus.</p>
+        <p>Sed  in nunc mattis, vehicula justo ac, lacinia ex. In hac habitasse platea dictumst. Donec ac tincidunt eros. Aliquam erat volutpat. Morbi varius est sit amet est tempor, sit amet vehicula nunc pellentesque. Integer consequat tincidunt mauris, vel hendrerit justo convallis non. Proin sit amet sem eget diam viverra tempus quis ultrices mauris. Phasellus nulla metus, ultrices posuere risus eu, vehicula porttitor mi. Vivamus eu lacus ac nibh vulputate maximus. Morbi lobortis mattis leo, id facilisis purus tempus eget. Fusce a suscipit orci, eu sollicitudin ipsum.</p>
+    </div>
+
+    <div class="container" id="awardsContent" style="display:none;">
+        <h1>Títulos de Ayrton Senna</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mi nec odio semper vulputate. Nam et rutrum arcu. Aenean lacus velit, pretium non tortor sed, sagittis congue sem. Nam tempor erat at tellus luctus faucibus. Donec at est in erat congue tincidunt non at odio. Ut non lorem arcu. Duis fermentum congue justo, vel dignissim nisi aliquam eget. Curabitur fringilla condimentum massa, eu accumsan neque venenatis nec. Praesent iaculis sagittis eros id luctus.</p>
+        <p>Sed  in nunc mattis, vehicula justo ac, lacinia ex. In hac habitasse platea dictumst. Donec ac tincidunt eros. Aliquam erat volutpat. Morbi varius est sit amet est tempor, sit amet vehicula nunc pellentesque. Integer consequat tincidunt mauris, vel hendrerit justo convallis non. Proin sit amet sem eget diam viverra tempus quis ultrices mauris. Phasellus nulla metus, ultrices posuere risus eu, vehicula porttitor mi. Vivamus eu lacus ac nibh vulputate maximus. Morbi lobortis mattis leo, id facilisis purus tempus eget. Fusce a suscipit orci, eu sollicitudin ipsum.</p>
+    </div>
+
+    <!-- <img src="./img/ayrton.jpg" class="background"> -->
+    <footer>
+        <div class="powered">
+            Página de Tributo ao Maior Ídolo Brasileiro: <strong>Ayrton Senna.</strong>
+        </div>
+    </footer>    
+    <div id="loader" ><img src="./img/charging.gif"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/js.js"></script>
+    
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    
+</body>
+</html>
