@@ -1,7 +1,7 @@
 :root {
     --color-blue: rgba(67, 147, 227, 0.772);
     --color-green: rgba(1, 168, 80, 1);
-    --color-yellow: rgb(255, 255, 255);
+    --color-yellow: rgba(255, 255, 255, 1);
     --color-white: rgba(225, 225, 230, 1);
     --color-greenOpacity: rgba(1, 168, 79, 0.611);
     --height-header: 6vh;
@@ -25,7 +25,7 @@ header {
 
     position: fixed;
     z-index: 3;
-    box-shadow: 1px 1px 10px 1px rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 1);
 }
 
 header p {
@@ -103,6 +103,21 @@ li {
     border-radius: 5px;
 }
 
+.menuHamburguer .closedOut {
+    position: fixed;
+    right: -600px;
+    z-index: 995;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    margin-left: -400px;
+
+    background-color: red;
+    opacity: 0;
+    border-radius: 5px;
+}
+
 .menuHamburguer .menuFaketrigger {
     position: fixed;
     right: 16px;
@@ -115,6 +130,10 @@ li {
 
 .menuHamburguer .menuFaketrigger:checked~ul {
     margin-right: 200px;
+}
+
+.menuHamburguer .menuFaketrigger:checked~.closedOut {
+    margin-right: 600px;
 }
 
 .menuHamburguer .menuFaketrigger:hover {
@@ -143,7 +162,7 @@ li {
     border-radius: 3px;
     transition: all ease .2s;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .menuHamburguer .menuFaketrigger:hover~span {
@@ -179,19 +198,6 @@ li {
 
 .menuHamburguer a:hover {
     transform: scale(1.1);
-    color: var(--color-yellow);
-}
-
-.background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -3;
 }
 
 .container {
@@ -218,6 +224,21 @@ li {
 
 h1 {
     text-align: center;
+}
+
+.listMain {
+    display: flex;
+    display:inline-block;
+}
+
+.mainItemLink {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+.listMain:hover {
+    transform: scale(1.1);
 }
 
 .galleryContainer {
@@ -251,7 +272,7 @@ h1 {
     border: none;
     background: linear-gradient(to left, transparent 0%, black 200%);
     opacity: 0.6;
-    z-index: 800;
+    z-index: 1;
 }
 
 .arrowRight {

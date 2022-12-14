@@ -1,3 +1,5 @@
+const checkboxes = document.querySelectorAll('input[type=checkbox]');
+
 function hideLoader() {
     $('#loader').hide();
 }
@@ -9,6 +11,10 @@ function homeBtn() {
     document.getElementById("galleryContent").style.display = "none";
     document.getElementById("quizContent").style.display = "none";
     document.getElementById("awardsContent").style.display = "none";
+
+    for (const i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = !checkboxes[i].checked;
+    }
 }
 
 function curiosityBtn() {
@@ -17,6 +23,10 @@ function curiosityBtn() {
     document.getElementById("galleryContent").style.display = "none";
     document.getElementById("quizContent").style.display = "none";
     document.getElementById("awardsContent").style.display = "none";
+
+    for (const i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = !checkboxes[i].checked;
+    }
 }
 
 function galleryBtn() {
@@ -25,6 +35,10 @@ function galleryBtn() {
     document.getElementById("homeContent").style.display = "none";
     document.getElementById("quizContent").style.display = "none";
     document.getElementById("awardsContent").style.display = "none";
+
+    for (const i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = !checkboxes[i].checked;
+    }
 }
 
 function quizBtn() {
@@ -33,6 +47,10 @@ function quizBtn() {
     document.getElementById("homeContent").style.display = "none";
     document.getElementById("galleryContent").style.display = "none";
     document.getElementById("awardsContent").style.display = "none";
+
+    for (const i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = !checkboxes[i].checked;
+    }
 }
 
 function awardsBtn() {
@@ -41,6 +59,16 @@ function awardsBtn() {
     document.getElementById("homeContent").style.display = "none";
     document.getElementById("galleryContent").style.display = "none";
     document.getElementById("quizContent").style.display = "none";
+
+    for (const i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = !checkboxes[i].checked;
+    }
+}
+
+function closeMenu() {
+    for (const i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = !checkboxes[i].checked;
+    }
 }
 
 const controls = document.querySelectorAll('.control');
