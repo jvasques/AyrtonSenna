@@ -4,7 +4,7 @@
     --color-yellow: rgba(255, 255, 255, 1);
     --color-white: rgba(225, 225, 230, 1);
     --color-greenOpacity: rgba(1, 168, 79, 0.611);
-    --height-header: 6vh;
+    --height-header: 7vh;
     font-family: monospace;
 
 }
@@ -142,7 +142,7 @@ li {
 
 .menuHamburguer .menuLines {
     position: fixed;
-    right: 16px;
+    right: 26px;
     top: 8px;
     z-index: 999;
     width: 35px;
@@ -155,7 +155,7 @@ li {
 
 .menuHamburguer .menuLines span {
     display: block;
-    width: calc(var(--height-header) * 1.1);
+    width: calc(var(--height-header) * 1);
     height: calc(var(--height-header) * 0.07);
     margin-bottom: calc(var(--height-header) * 0.2);
     background-color: var(--color-blue);
@@ -176,7 +176,7 @@ li {
 
 .menuHamburguer .menuFaketrigger:checked~.menuLines span:nth-child(1) {
     transform-origin: 0% 0%;
-    transform: rotate(45deg) scaleX(0.75);
+    transform: rotate(45deg) scaleX(0.8);
 }
 
 .menuHamburguer .menuFaketrigger:checked~.menuLines span:nth-child(2) {
@@ -185,7 +185,7 @@ li {
 
 .menuHamburguer .menuFaketrigger:checked~.menuLines span:nth-child(3) {
     transform-origin: 0% 100%;
-    transform: rotate(-45deg) scaleX(0.75);
+    transform: rotate(-45deg) scaleX(0.8);
 }
 
 .menuHamburguer a {
@@ -323,6 +323,7 @@ footer {
     font-size: 20px;
     padding: 1rem 0;
     box-shadow: 1px 1px 10px 1px rgb(255, 255, 255);
+    min-width: 276px;
 
 }
 
@@ -363,7 +364,7 @@ footer {
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 636px) {
     h1 {
         font-size: 1.55rem;
     }
@@ -379,6 +380,6 @@ footer {
     }
 
     footer {
-        font-size: 10px;
+        font-size: 16px;
     }
 }

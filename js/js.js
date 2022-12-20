@@ -6,67 +6,57 @@ function hideLoader() {
 setTimeout(hideLoader, 2 * 1000);
 
 function homeBtn() {
-    document.getElementById("homeContent").style.display = "block";
-    document.getElementById("curiosityContent").style.display = "none";
-    document.getElementById("galleryContent").style.display = "none";
-    document.getElementById("quizContent").style.display = "none";
-    document.getElementById("awardsContent").style.display = "none";
 
-    for (const i = 0; i < checkboxes.length; i++) {
+    document.getElementById("homeContent").style.display = "block";
+    const displayNone = ['curiosityContent', 'galleryContent', 'quizContent', 'awardsContent'].map(id => document.getElementById(id).style.display = "none");
+
+    for (let i = 0; i < checkboxes.length; i++) {
         checkboxes[i].checked = !checkboxes[i].checked;
     }
 }
 
 function curiosityBtn() {
-    document.getElementById("curiosityContent").style.display = "block";
-    document.getElementById("homeContent").style.display = "none";
-    document.getElementById("galleryContent").style.display = "none";
-    document.getElementById("quizContent").style.display = "none";
-    document.getElementById("awardsContent").style.display = "none";
 
-    for (const i = 0; i < checkboxes.length; i++) {
+    document.getElementById("curiosityContent").style.display = "block";
+    const displayNone = ['homeContent', 'galleryContent', 'quizContent', 'awardsContent'].map(id => document.getElementById(id).style.display = "none");
+
+    for (let i = 0; i < checkboxes.length; i++) {
         checkboxes[i].checked = !checkboxes[i].checked;
     }
 }
 
 function galleryBtn() {
-    document.getElementById("galleryContent").style.display = "block";
-    document.getElementById("curiosityContent").style.display = "none";
-    document.getElementById("homeContent").style.display = "none";
-    document.getElementById("quizContent").style.display = "none";
-    document.getElementById("awardsContent").style.display = "none";
 
-    for (const i = 0; i < checkboxes.length; i++) {
+    document.getElementById("galleryContent").style.display = "block";
+    const displayNone = ['curiosityContent', 'homeContent', 'quizContent', 'awardsContent'].map(id => document.getElementById(id).style.display = "none");
+
+    for (let i = 0; i < checkboxes.length; i++) {
         checkboxes[i].checked = !checkboxes[i].checked;
     }
 }
 
 function quizBtn() {
-    document.getElementById("quizContent").style.display = "block";
-    document.getElementById("curiosityContent").style.display = "none";
-    document.getElementById("homeContent").style.display = "none";
-    document.getElementById("galleryContent").style.display = "none";
-    document.getElementById("awardsContent").style.display = "none";
 
-    for (const i = 0; i < checkboxes.length; i++) {
+    document.getElementById("quizContent").style.display = "block";
+    const displayNone = ['curiosityContent', 'homeContent', 'galleryContent', 'awardsContent'].map(id => document.getElementById(id).style.display = "none");
+
+    for (let i = 0; i < checkboxes.length; i++) {
         checkboxes[i].checked = !checkboxes[i].checked;
     }
 }
 
 function awardsBtn() {
-    document.getElementById("awardsContent").style.display = "block";
-    document.getElementById("curiosityContent").style.display = "none";
-    document.getElementById("homeContent").style.display = "none";
-    document.getElementById("galleryContent").style.display = "none";
-    document.getElementById("quizContent").style.display = "none";
 
-    for (const i = 0; i < checkboxes.length; i++) {
+    document.getElementById("awardsContent").style.display = "block";
+    const displayNone = ['curiosityContent', 'homeContent', 'galleryContent', 'quizContent'].map(id => document.getElementById(id).style.display = "none");
+
+    for (let i = 0; i < checkboxes.length; i++) {
         checkboxes[i].checked = !checkboxes[i].checked;
     }
 }
 
 function closeMenu() {
-    for (const i = 0; i < checkboxes.length; i++) {
+    for (let i = 0; i < checkboxes.length; i++) {
         checkboxes[i].checked = !checkboxes[i].checked;
     }
 }
