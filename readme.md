@@ -24,24 +24,24 @@ Projeto pessoal homenageando o piloto de Fórmula 1 brasileiro, Ayrton Senna.
 
 * 🖍️ Armazenamento das cores utilizadas no projeto em variáveis CSS;
 * 🍔 Menu hamburguer animado, totalmente em CSS;
+* 🖼️ Galeria de Fotos Carrossel;
+* 🏆 Linha do Tempo de Premiações do homenageado.
 </br>
 </br>
 
 ## Em Andamento
 
-* ⏳ Preenchimento das Informações do Site;
-* ⏳ Galeria Carrossel de Fotos;
+* ⏳ Preenchimento das Informações do Site (80%);
 * ⏳ Quiz em JavaScript e API JSON;
-* ⏳ Linha do Tempo de Premiações do homenageado.
 </br>
 </br>
 
 ## Screenshots
 
-<img src="img/screen.png" height="300px" width="600px">
+<img src="img/screen.jpg" height="250px" width="600px">
 </br>
 </br>
-<img src="img/screen-mobile.png" height="300px" width="200px">
+<img src="img/screen-mobile.jpg" height="200px" width="600px">
 </br>
 </br>
 
