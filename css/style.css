@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     min-width: 360px;
-    min-height: 100vh;
+    min-height: 460px;
     /* background-color: var(--color-blue) */
 }
 
@@ -103,41 +103,41 @@ li {
 .menuHamburguer {
     display: none;
     z-index: 999;
-
+    padding: 0;
 }
 
 .menuHamburguer ul {
     position: fixed;
-    right: -200px;
-    z-index: 998;
+    right: -103vw;
+    z-index: 997;
     top: calc(var(--height-header) - 10px);
-    width: 150px;
-    height: calc(80vh - 35px);
-    padding-top: 100px;
-    margin-left: -400px;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 6vh;
+    padding-left: 10px;
     transition: all ease .2s;
 
+    text-align: center;
     background-color: rgb(9, 68, 126);
     border-radius: 5px;
 }
 
 .menuHamburguer li {
-    font-size: 4rem;
+    padding: 5%;
+    font-size: 2rem;
 }
 
 .menuHamburguer li:hover {
-    transform: scale(1.1);
+    transform: scale(1.1, 1.1);
 }
 
 .menuHamburguer .closedOut {
     position: fixed;
-    right: -600px;
-    z-index: 995;
+    right: -102vw;
+    z-index: 996;
     top: 0;
-    width: 100%;
-    height: 100%;
-    padding-top: 100px;
-    margin-left: -400px;
+    width: 101vw;
+    height: 101vh;
 
     background-color: red;
     opacity: 0;
@@ -155,11 +155,13 @@ li {
 }
 
 .menuHamburguer .menuFaketrigger:checked~ul {
-    margin-right: 200px;
+    /* margin-right: 102%; */
+    left: 0;
+    right: 0;
 }
 
 .menuHamburguer .menuFaketrigger:checked~.closedOut {
-    margin-right: 600px;
+    margin-right: 101vw;
 }
 
 .menuHamburguer .menuFaketrigger:hover {
@@ -215,6 +217,7 @@ li {
 }
 
 .menuHamburguer a {
+    z-index: 998;
     text-decoration: none;
     cursor: pointer;
     font-size: 1.6rem;
@@ -230,11 +233,9 @@ li {
     height: 60vh;
     border: 2px solid var(--color-white);
     border-radius: 3px;
-    width-min: 150px;
-    height-min: 1000px;
     color: var(--color-white);
     justify-content: center;
-    white-space: rap;
+    white-space: wrap;
     overflow: auto;
     text-overflow: ellipsis;
     padding: 1rem;
@@ -322,10 +323,6 @@ h3 {
     transition: all 600ms ease-in-out;
 }
 
-/* .item:active {
-    display: none;
-} */
-
 .currentItem {
     opacity: 1;
     transform: scale(1.05);
@@ -341,7 +338,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    height: 24px;
+    /* height: 24px; */
     background: rgba(9, 68, 126, 1);
     border-top: 2px solid var(--color-white);
     text-align: center;
@@ -367,7 +364,7 @@ footer {
 }
 
 #loader img {
-    position: relative;
+    position:relative;
     left: 35%;
     top: 35%;
     width: 30%;
@@ -390,25 +387,41 @@ footer {
     .container {
         border-radius: 5px;
     }
+
+    #loader img {
+        display: flex;
+        align-items: center;
+        left: 25%;
+        width: 50%;
+        height: 20%;
+    }
+    div .trophy-caption {
+        font-size: 0.90rem;
+    }
 }
 
 @media (max-width: 636px) {
     h1 {
         font-size: 1.55rem;
     }
-
-    p {
-        /* font-size: 5vh; */
-        font-size: 0.90rem;
-
+    h3 {
+        font-size: 1rem;
     }
-
+    p {
+        font-size: 0.90rem;
+    }
     .container {
         border-radius: 5px;
     }
-
     footer {
-        font-size: 16px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 750px) {
+    .menuHamburguer li {
+        font-size: 0px;
+        padding-top: 0;
     }
 }
 
@@ -449,8 +462,8 @@ footer {
 }
 
 .trophy-caption {
-    font-size: 0.8em;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 5px;
+    letter-spacing: 0.5px;
+    margin-top: 5px;    
 }
